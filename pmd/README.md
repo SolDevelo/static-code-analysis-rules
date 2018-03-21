@@ -4,7 +4,7 @@ This is the PMD ruleset we endorse for all of our Java projects. Built for PMD v
 
 ## Usage
 
-To include PMD and CPD in maven, use the following configuration:
+To include PMD and CPD in a Maven build, use the following configuration:
 
 ```
 <plugin>
