@@ -4,7 +4,7 @@ This is an Eslint configuration we use for Javascripts apps built using React. I
 
 ## Usage
 
-To include in Webpack, add the .eslint file to your repository and  add the following loader to your configuration:
+To include in a Webpack build, add the .eslint file to your repository and add the following loader to your configuration:
 
 ```javascript
 {
