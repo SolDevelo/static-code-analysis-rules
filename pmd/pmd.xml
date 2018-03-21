@@ -67,7 +67,7 @@
     <rule ref="rulesets/java/empty.xml/EmptyIfStmt"/>
     <rule ref="rulesets/java/empty.xml/EmptyInitializer"/>
     <rule ref="rulesets/java/empty.xml/EmptyStatementNotInLoop"/>
-    <rule ref="rulesets/java/empty.xml/EmptyStaticInitializer"/>
+    <rule ref="rulesets/java/empty.xml/EmptyInitializer"/>
     <rule ref="rulesets/java/empty.xml/EmptySwitchStatements"/>
     <rule ref="rulesets/java/empty.xml/EmptySynchronizedBlock"/>
     <rule ref="rulesets/java/empty.xml/EmptyTryBlock"/>
@@ -81,6 +81,7 @@
     <rule ref="rulesets/java/imports.xml/DontImportJavaLang"/>
     <rule ref="rulesets/java/imports.xml/DuplicateImports"/>
     <rule ref="rulesets/java/imports.xml/ImportFromSamePackage"/>
+    <rule ref="rulesets/java/imports.xml/UnusedImports"/>
 
     <rule ref="rulesets/java/javabeans.xml/MissingSerialVersionUID"/>
 
@@ -136,10 +137,8 @@
     <rule ref="rulesets/java/sunsecure.xml/ArrayIsStoredDirectly"/>
     <rule ref="rulesets/java/sunsecure.xml/MethodReturnsInternalArray"/>
 
-    <rule ref="rulesets/java/typeresolution.xml/UnusedImports"/>
-
     <rule ref="rulesets/java/unnecessary.xml/UnnecessaryConversionTemporary"/>
-    <rule ref="rulesets/java/unnecessary.xml/UnnecessaryFinalModifier"/>
+    <rule ref="rulesets/java/unnecessary.xml/UnnecessaryModifier"/>
     <rule ref="rulesets/java/unnecessary.xml/UnnecessaryReturn"/>
     <rule ref="rulesets/java/unnecessary.xml/UnusedNullCheckInEquals"/>
     <rule ref="rulesets/java/unnecessary.xml/UselessOperationOnImmutable"/>
