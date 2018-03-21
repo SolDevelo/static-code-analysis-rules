@@ -6,7 +6,7 @@ This is the PMD ruleset we endorse for all of our Java projects. Built for PMD v
 
 To include PMD and CPD in a Maven build, use the following configuration:
 
-```
+```xml
 <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-pmd-plugin</artifactId>
