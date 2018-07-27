@@ -28,3 +28,7 @@ To include Checkstyle in a Maven build, use the following configuration:
     </configuration>
 </plugin>
 ```
+
+Additionally, for most of Spring projects, you'll need a static main class, with default, public constructor.
+In that case add ```@SuppressWarnings("checkstyle:hideutilityclassconstructor")``` above this main class, so it won't be
+treated like a utility class.
