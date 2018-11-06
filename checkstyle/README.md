@@ -25,9 +25,13 @@ To include Checkstyle in a Maven build, use the following configuration:
         <consoleOutput>true</consoleOutput>
         <failsOnError>true</failsOnError>
         <configLocation>checkstyle.xml</configLocation>
+        <sourceDirectories>${project.build.sourceDirectory}</sourceDirectories>
     </configuration>
 </plugin>
 ```
+
+`configLocation` point to the configuration file location (starting from app root directory)
+`sourceDirectories` point to the directory that is going to be checked
 
 Additionally, for most of Spring projects, you'll need a static main class, with default, public constructor.
 In that case add ```@SuppressWarnings("checkstyle:hideutilityclassconstructor")``` above this main class, so it won't be
