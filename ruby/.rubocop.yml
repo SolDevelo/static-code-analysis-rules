@@ -1,0 +1,71 @@
+AllCops:
+  TargetRubyVersion: 2.5
+  Exclude:
+    - 'spec/views/**/*'
+    - 'db/schema.rb'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'bin/**/*'
+    - 'node_modules/**/*'
+    - 'lib/tasks/deployment/archived/*'
+    - !ruby/regexp /old_and_unused\.rb$/
+
+Rails:
+  Enabled: true
+
+Documentation:
+  Enabled: false
+
+AbcSize:
+  Enabled: false
+
+Metrics/BlockLength:
+  ExcludedMethods: ['describe', 'context', 'namespace', 'task', 'shared_examples', 'it']
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/ClassLength:
+  Max: 216
+
+# Avoid complex methods.
+Metrics/CyclomaticComplexity:
+  Max: 20
+
+# Configuration parameters: CountComments.
+Metrics/MethodLength:
+  Max: 118
+
+# Configuration parameters: CountComments.
+Metrics/ModuleLength:
+  Max: 216
+
+# Offense count: 58
+Metrics/PerceivedComplexity:
+  Max: 39
+
+Naming/PredicateName:
+  NamePrefixBlacklist:
+    - is_
+
+Style/BlockDelimiters:
+  IgnoredMethods: ['expect']
+
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+
+Layout/FirstParameterIndentation:
+  IndentationWidth: 4
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    default: ()
+    '%i': ()
+    '%I': ()
+    '%r': ()
+    '%w': ()
+    '%W': ()
